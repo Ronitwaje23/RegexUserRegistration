@@ -10,8 +10,6 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
-
-
             Console.WriteLine("Welcome to User Registration");
             bool flag = true;
             while (flag)

@@ -10,6 +10,8 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
+
+
             Console.WriteLine("Welcome to User Registration");
             bool flag = true;
             while (flag)
@@ -46,13 +48,14 @@ namespace UserRegistration
                         RegistrationValidation mobilenumpattern = new RegistrationValidation();
                         mobilenumpattern.Checkmobilenum(mobilenum);
                         break;
+
                     case 5:
                         Console.WriteLine("Enter Passward :");
                         string passward = Console.ReadLine();
                         RegistrationValidation passwardruleone = new RegistrationValidation();
                         passwardruleone.Checkpassward(passward);
                         break;
-                        
+
                     case 6:
                         flag = false;
                         break;
@@ -61,7 +64,7 @@ namespace UserRegistration
                         break;
                 }
             }
-                      Console.ReadLine();
+            Console.ReadLine();
         }
     }
 }
